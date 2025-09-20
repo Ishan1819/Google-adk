@@ -1,0 +1,4 @@
+requests
+python-dotenv
+cloudinary
+google-adk
