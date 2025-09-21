@@ -6,4 +6,4 @@ google-generativeai
 google-cloud-aiplatform
 google-auth
 pillow
-package>=2.0.0
+package
