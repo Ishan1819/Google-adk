@@ -85,7 +85,14 @@ import os
 from google.adk.agents import LlmAgent
 import google.generativeai as genai
 from PIL import Image
-from config import GOOGLE_API_KEY
+import os
+from dotenv import load_dotenv
+
+# Load .env file
+load_dotenv()
+
+# Get API key from environment
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # -----------------------
 # Configure Google Gemini
@@ -114,6 +121,7 @@ def generate_caption_from_file(image_path: str) -> str:
 
         # Prompt for Gemini
         prompt = """Create an engaging Instagram caption for this photo.
+        Add a dummy artisan name compulsorily for now (Example -by Keshav Mahotsani)
         Keep it under 300 characters. Use 1-2 relevant emojis.
         Make it catchy and Instagram-style, not a description. Make it breath taking and very relevant.
         Focus on mood, feeling, or a brief inspirational message."""

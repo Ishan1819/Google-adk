@@ -2,14 +2,18 @@ from google.adk.agents import LlmAgent
 import requests, time
 import cloudinary
 import cloudinary.uploader
-from config import (
-    ACCESS_TOKEN,
-    INSTAGRAM_BUSINESS_ACCOUNT_ID,
-    LOCAL_IMAGE_PATH,
-    CLOUD_NAME,
-    CLOUD_API_KEY,
-    CLOUD_API_SECRET
-)
+import os
+from dotenv import load_dotenv
+
+# Load .env file
+load_dotenv()
+
+ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
+INSTAGRAM_BUSINESS_ACCOUNT_ID = os.getenv("INSTAGRAM_BUSINESS_ACCOUNT_ID")
+LOCAL_IMAGE_PATH = os.getenv("LOCAL_IMAGE_PATH")
+CLOUD_NAME = os.getenv("CLOUD_NAME")
+CLOUD_API_KEY = os.getenv("CLOUD_API_KEY")
+CLOUD_API_SECRET = os.getenv("CLOUD_API_SECRET")
 
 # Configure Cloudinary
 cloudinary.config(
