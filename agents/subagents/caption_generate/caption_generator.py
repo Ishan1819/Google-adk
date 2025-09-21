@@ -114,8 +114,8 @@ def generate_caption_from_file(image_path: str) -> str:
 
         # Prompt for Gemini
         prompt = """Create an engaging Instagram caption for this photo.
-        Keep it under 150 characters. Use 1-2 relevant emojis.
-        Make it catchy and Instagram-style, not a description.
+        Keep it under 300 characters. Use 1-2 relevant emojis.
+        Make it catchy and Instagram-style, not a description. Make it breath taking and very relevant.
         Focus on mood, feeling, or a brief inspirational message."""
 
         print("🌀 Calling Gemini API...")
