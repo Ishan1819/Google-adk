@@ -2,3 +2,7 @@ requests
 python-dotenv
 cloudinary
 google-adk
+google-generativeai
+google-cloud-aiplatform
+google-auth
+pillow
