@@ -5,3 +5,9 @@ python-dotenv
 pillow
 instagrapi
 cloudinary
+sounddevice
+scipy
+openai-whisper
+gtts
+SpeechRecognition
+playsound
